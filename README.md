@@ -26,20 +26,20 @@ I built a small Windows domain environment in Azure with a domain controller (**
 
 ### 1. Folders shared on DC-1
 
-![Shared folders on DC-1]("C:\Users\jolip\Pictures\Screenshots\fileShareLab\dc1AddedFolders.png")
+![Shared folders on DC-1]("dc1AddedFolders.png")
 *A standard user opens `\\dc-1` on Client-1 and sees the shared folders.*
 
 ### 2. Access denied on `no-access`
 
-![Access denied on no-access]("C:\Users\jolip\Pictures\Screenshots\fileShareLab\limitedAccessUser.png")
+![Access denied on no-access]("limitedAccessUser.png")
 *The standard user is blocked because only Domain Admins have access.*
 
 ### 3. Before and after joining the ACCOUNTANTS group
 
-![Accounting denied before]("C:\Users\jolip\Pictures\Screenshots\fileShareLab\restrictedAccessAccounting.png")
+![Accounting denied before]("editAccessDenied.png")
 *Before: access to `accounting` is denied.*
 
-![Accounting opened after]("C:\Users\jolip\Pictures\Screenshots\fileShareLab\unristrictedAccessUserAccount.png")
+![Accounting opened after]("unristrictedAccessUserAccount.png")
 *After: the user was added to ACCOUNTANTS, signed out and back in, and now has access.*
 
 ## What I Learned
